@@ -20,3 +20,15 @@ img {
     margin: 0;
   }
 }
+
+//Buttons
+button {
+  background-color: $heading-theme;
+  border-radius: 50px;
+  font-weight: bold;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin: 0 auto;
+  @include center-me;
+  margin-top: 10px;
+}
