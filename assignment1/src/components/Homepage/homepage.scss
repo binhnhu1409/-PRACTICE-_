@@ -1,0 +1,47 @@
+@import '../../sassStyles/mixins';
+@import '../../sassStyles/variables';
+
+.home {
+  &__arrow {
+    @include center-me;
+    @include heading-text(33px);
+  }
+
+  &__title {
+    border-bottom: none;
+  }
+}
+
+@include lgMinPoint {
+  .home {
+    display: flex;
+    margin: 50px 20px;
+
+    &__article {
+      @include myflex(column, center);
+      padding-right: 20px;
+    }
+
+    &__title {
+      @include main-text (60px);
+      margin: 0;
+      align-self: flex-start;
+    }
+
+    &__content {
+      font-size: 20px;
+    }
+  }
+}
+
+@include lgMaxPoint {
+  .home {
+    &__title {
+      @include main-text (40px);
+    }
+
+    &__content {
+      font-size: 18px;
+    }
+  }
+}

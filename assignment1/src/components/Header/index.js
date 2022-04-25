@@ -1,26 +1,28 @@
-import React from 'react'
+import React from 'react';
+
+import './header.scss';
 
 const Header = () => {
   return (
-    <header className='header'>
-      <h1 className='header__title'>Branding</h1>
+    <header className='head'>
+      <h1 className='head__title'>Branding</h1>
 
-      <nav className='nav'>
-        <ul className='nav__menu'>
-          <li className='nav__item'>
-            <a className='nav__link' href='#homepage'>Homepage</a>
+      <nav className='navbar'>
+        <ul className='navbar__menu'>
+          <li className='navbar__item'>
+            <a className='navbar__link' href='#homepage'>Homepage</a>
           </li>
-          <li className='nav__item'>
-            <a className='nav__link' href='#servicesPage'>Services</a>
+          <li className='navbar__item'>
+            <a className='navbar__link' href='#servicesPage'>Services</a>
           </li>
-          <li className='nav__item'>
-            <a className='nav__link' href='#techPage'>TechStack</a>
+          <li className='navbar__item'>
+            <a className='navbar__link' href='#techPage'>TechStack</a>
           </li>
-          <li className='nav__item'>
-            <a className='nav__link' href='#blogsPage'>Blogs</a>
+          <li className='navbar__item'>
+            <a className='navbar__link' href='#blogsPage'>Blogs</a>
           </li>
-          <li className='nav__item'>
-            <a className='nav__link' href='#contactPage'>Contact</a>
+          <li className='navbar__item'>
+            <a className='navbar__link' href='#contactPage'>Contact</a>
           </li>
         </ul>
       </nav>

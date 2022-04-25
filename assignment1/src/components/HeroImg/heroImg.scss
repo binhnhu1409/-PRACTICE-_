@@ -1,0 +1,33 @@
+@import '../../sassStyles/animation';
+@import '../../sassStyles/mixins';
+@import '../../sassStyles/variables';
+
+//styling
+@include mdMinPoint {
+  aside {
+    text-align: center;
+  }
+
+  svg {
+    @include frame (600px, auto);
+  }
+}
+
+@include mdMaxPoint {
+  svg {
+    @include frame (100%, auto)
+  }
+}
+
+// animation
+path#sun {
+  animation: rotate 10s ease-in-out infinite;
+}
+
+path.leaves {
+  animation: blowing 5s ease-in-out infinite;
+}
+
+.fa-angle-down {
+  animation: fading 2s ease-in infinite;
+}

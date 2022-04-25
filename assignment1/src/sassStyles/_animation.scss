@@ -1,0 +1,41 @@
+// This partial stores the actual @keyframe CSS animations
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-15deg);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: rotate(-30deg);
+    opacity: 0.1;
+  }
+}
+
+@keyframes blowing {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: skewY(25deg);
+  }
+
+  100% {
+    opacity: 0;
+
+  }
+}
+
+@keyframes fading {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}

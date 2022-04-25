@@ -1,0 +1,11 @@
+@import '../../sassStyles/mixins';
+@import '../../sassStyles/variables';
+
+.contact {
+  &__form {
+    line-height: 1.5;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+  }
+}

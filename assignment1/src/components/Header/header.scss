@@ -1,0 +1,60 @@
+@import '../../sassStyles/mixins';
+@import '../../sassStyles/variables';
+
+
+@include mdMinPoint {
+  .head__title {
+    position: relative;
+    top: 50px;
+  }
+
+  .navbar {
+    position: relative;
+    top: -20px;
+
+    &__menu {
+      display: flex;
+      flex-basis: 100px;
+      justify-content: flex-end;
+    }
+
+    &__link {
+      line-height: $nav-height;
+      display: block;
+      padding: 0 20px 0 20px;
+    }
+  }
+}
+
+.head {
+  background-color: $heading-theme;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 5px;
+
+  &__title {
+    padding: 10px 0 0 20px;
+    color: $color-theme;
+    text-transform: uppercase;
+    flex-grow: 1;
+  }
+}
+
+.navbar {
+  &__menu {
+    list-style: none;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    font-size: large;
+    margin: 10px 0;
+  }
+
+  &__link {
+    color: $color-theme;
+
+    &:hover {
+      text-decoration-style: wavy;
+    }
+  }
+}

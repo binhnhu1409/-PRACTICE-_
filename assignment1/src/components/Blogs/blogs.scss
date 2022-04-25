@@ -1,0 +1,12 @@
+@import '../../sassStyles/mixins';
+@import '../../sassStyles/variables';
+
+@include mdMinPoint {
+  .blog {
+    display: flex;
+
+    &__article {
+      text-align: start;
+    }
+  }
+}

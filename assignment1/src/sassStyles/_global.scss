@@ -1,0 +1,22 @@
+// This partial contains styling that overrides global elements, such as the #root or body elements
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap");
+
+@import './mixins';
+@import './variables';
+@import './typography';
+
+body {
+  background-color: $color-theme;
+}
+
+//Images
+img {
+  @include frame(400px, auto);
+}
+
+@include smMaxPoint {
+  img {
+    width: 100vw;
+    margin: 0;
+  }
+}

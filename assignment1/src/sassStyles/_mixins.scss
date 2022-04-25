@@ -1,0 +1,64 @@
+// This partial can hold any block of code that is repeatable.
+
+@mixin heading-text ($size) {
+  color: $heading-theme;
+  font-family: Titillium Web;
+  font-size: $size;
+}
+
+@mixin main-text ($size) {
+  @include heading-text($size);
+  text-transform: uppercase;
+}
+
+@mixin frame ($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin myflex ($direction, $justifyContent) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+}
+
+@mixin highlight {
+  border-bottom: 1px $heading-theme solid;
+  width: 300px;
+  margin: 30px auto;
+}
+
+@mixin center-me {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin mdMinPoint {
+  @media screen and (min-width: $md-screen) {
+    @content;
+  }
+}
+
+@mixin mdMaxPoint {
+  @media screen and (max-width: $md-screen) {
+    @content;
+  }
+}
+
+@mixin lgMinPoint {
+  @media screen and (min-width: $lg-screen) {
+    @content;
+  }
+}
+
+@mixin lgMaxPoint {
+  @media screen and (max-width: $lg-screen) {
+    @content;
+  }
+}
+
+@mixin smMaxPoint {
+  @media screen and (max-width: $sm-screen) {
+    @content;
+  }
+}

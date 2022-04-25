@@ -1,0 +1,29 @@
+// This partial holds major typography element styles such as h1-h6, p, and global classes or ids.
+@import './mixins';
+@import './variables';
+
+h2 {
+  @include center-me;
+  @include heading-text(33px);
+  @include highlight;
+}
+
+h3 {
+  @include heading-text(24px);
+}
+
+p {
+  color: $para-color;
+  font-family: Titillium Web;
+  font-style: normal;
+}
+
+//Links
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
