@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Service';
+import Service from './Service';
 import './services.scss';
 
 const ServiceArray = [
