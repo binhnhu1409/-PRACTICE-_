@@ -7,7 +7,7 @@ const CountryHook = () => {
   return (
     <>
       {error && error.message}
-      {data && <div>The current population of {data.name.common} is {data.population} </div>}
+      {data && <div>The current population of {data[0].name.common} is {data[0].population} </div>}
     </>
   );
 };
